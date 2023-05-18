@@ -48,14 +48,16 @@ class Pig:
             os.makedirs(self.work_dir)
         
         time_str = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        checkpoint_path = f"{self.work_dir}/{cfg.task_name}-{time_str}"
+        self.checkpoint_path = f"{self.work_dir}/{cfg.task_name}-{time_str}"
 
-        self.agent = PPO(cfg, self.env, checkpoint_path)
+        self.agent = PPO(cfg, self.env, self.checkpoint_path)
+        self.test_flag = cfg.test
     
 
-    def run(self, mode="train"):
-        if mode == "train":
-            self.agent.train()
+    def run(self):
+        if not self.test_flag:
+            reward_list = self.agent.train()
+            with open(self.checkpoint_path + "/reward.txt", "w") as fp:
+                print(reward_list, file=fp)
         else:
-            assert mode == "test"
-            self.agent.eval(1000)
+            self.agent.eval(100000)

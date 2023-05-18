@@ -1,6 +1,12 @@
 from pig.pig import Pig
 
-pig = Pig("big/env/cfg/")
+# import BallBounce task
+from big.registry import register_task_map
+register_task_map()
 
-pig.run(mode="train")
-# pig.run(mode="test")
+"""
+    Modify the config path freely!
+"""
+
+pig = Pig("big/env/cfg/")
+pig.run()

@@ -75,8 +75,8 @@ class PPO:
 
         self.actor = Actor(env.num_observations, 128, env.num_actions).to(self.rl_device)
         self.critic = Critic(env.num_observations, 128, env.num_actions).to(self.rl_device)
-        self.actor_optim = torch.optim.Adam(self.actor.parameters(), lr=1e-4)#self.learning_rate)
-        self.critic_optim = torch.optim.Adam(self.critic.parameters(), lr=5e-3)#self.learning_rate)
+        self.actor_optim = torch.optim.Adam(self.actor.parameters(), lr=self.learning_rate)
+        self.critic_optim = torch.optim.Adam(self.critic.parameters(), lr=self.learning_rate*50)
 
 
     def compute_advantage(self, td_delta):
@@ -141,6 +141,8 @@ class PPO:
     
 
     def train(self):
+        record_list = []
+
         if not os.path.exists(self.save_checkpoint_path):
             os.makedirs(self.save_checkpoint_path)
 
@@ -178,10 +180,15 @@ class PPO:
 
             indices = torch.randint(self.horizon_length, (self.minibatch_size,), requires_grad=False)
             self.update(obs_buffer[indices], actions_buffer[indices], rewards_buffer[indices], next_obs_buffer[indices], dones_buffer[indices])
-            print(f"Episode: {i}, Avg Reward: {torch.mean(rewards_sum / self.horizon_length)}")
+            mean_reward = torch.mean(rewards_sum / self.horizon_length).item()
+            print(f"Episode: {i}, Avg Reward: {mean_reward}")
+
+            record_list.append(mean_reward)
 
             if (i+1) % self.save_frequency == 0:
                 self.save_model()
+
+        return record_list
 
 
     def eval(self, eval_step):

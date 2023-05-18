@@ -45,7 +45,7 @@ task:
 
 reward:
   name: ${resolve_default:"balancing",${...reward}}
-  alpha: 1
+  alpha: 3
   beta: 1
-  target_height: 0.7
+  target_height: 0.4
   height_limit: 999
