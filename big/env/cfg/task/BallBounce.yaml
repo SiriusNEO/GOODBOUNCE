@@ -44,8 +44,8 @@ task:
   randomize: False
 
 reward:
-  name: ${resolve_default:"balancing",${...reward}}
-  alpha: 3
+  name: ${resolve_default:"bouncing",${...reward}}
+  alpha: 1
   beta: 1
   target_height: 0.4
   height_limit: 999

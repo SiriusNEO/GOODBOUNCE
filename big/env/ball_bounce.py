@@ -83,6 +83,9 @@ class BallBounce(VecTask):
         dofs_per_env = 6
         bodies_per_env = 7 + 1
 
+        self.time = 0
+        self.buf = []
+
         # Observations:
         # 0:3 - activated DOF positions
         # 3:6 - activated DOF velocities
