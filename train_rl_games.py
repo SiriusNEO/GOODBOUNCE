@@ -1,5 +1,5 @@
 import hydra
-from big.registry import register
+from big.registry import register_task_map
 
 from isaacgymenvs.train import launch_rlg_hydra
 
@@ -10,5 +10,5 @@ def launch_rlg_hydra_override(cfg):
 
 
 if __name__ == "__main__":
-    register()
+    register_task_map()
     launch_rlg_hydra_override()
