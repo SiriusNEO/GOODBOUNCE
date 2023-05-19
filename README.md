@@ -1,6 +1,6 @@
 # GOODBOUNCE
 
-[Bouncing in Isaac Gym](big) | [PIG (PPO for Isaac Gym)](pig) | Mini Paper | Poster
+[Bouncing in Isaac Gym](big) | [PIG (PPO for Isaac Gym)](pig) | [Mini Paper](minipaper/minipaper.pdf) | Poster
 
 🏀 Balancing is Boring, Let’s Try Bouncing! CS3316 Reinforcement Learning Course Project.
 
@@ -12,7 +12,7 @@
 
 - `big/` contains the Ball Bouncing task settings in Isaac Gym
 - `pig/` implements the lightweight library PIG.
-- `checkpoints/` includes some useful checkpoints by me. (It's not large, so I directly put them in the repo).
+- `checkpoints/` includes some useful checkpoints trained by me. (Not large, so I directly put them in the repo).
 
 
 
