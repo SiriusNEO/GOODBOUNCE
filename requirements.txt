@@ -1,0 +1,89 @@
+absl-py @ file:///home/conda/feedstock_root/build_artifacts/absl-py_1673535674859/work
+aiohttp @ file:///home/conda/feedstock_root/build_artifacts/aiohttp_1663850771047/work
+aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
+antlr4-python3-runtime==4.9.3
+async-timeout @ file:///home/conda/feedstock_root/build_artifacts/async-timeout_1640026696943/work
+asynctest==0.13.0
+attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1683424013410/work
+blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_1681349778161/work
+brotlipy @ file:///home/conda/feedstock_root/build_artifacts/brotlipy_1648854164153/work
+cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1674482203741/work
+certifi==2023.5.7
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1666183775483/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1661170624537/work
+click==8.0.4
+cloudpickle==2.1.0
+cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1666563349571/work
+distlib==0.3.6
+docker-pycreds==0.4.0
+filelock==3.11.0
+frozenlist @ file:///home/conda/feedstock_root/build_artifacts/frozenlist_1659556953511/work
+gitdb==4.0.10
+GitPython==3.1.31
+google-auth @ file:///home/conda/feedstock_root/build_artifacts/google-auth_1683751600794/work
+google-auth-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/google-auth-oauthlib_1630497468950/work
+grpcio==1.43.0
+gym==0.23.1
+gym-notices==0.0.7
+hydra-core==1.3.2
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+imageio==2.27.0
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1653252814274/work
+importlib-resources==5.12.0
+# Editable install with no version control (isaacgym==1.0rc4)
+-e /root/isaacgym/python
+-e git+ssh://git@github.com/NVIDIA-Omniverse/IsaacGymEnvs.git@3d2d5ed7ce71401db3063d8c339f4a800ce8709f#egg=isaacgymenvs
+jsonschema==4.8.0
+Markdown @ file:///home/conda/feedstock_root/build_artifacts/markdown_1679584000376/work
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1648737551960/work
+msgpack==1.0.4
+multidict @ file:///home/conda/feedstock_root/build_artifacts/multidict_1648882415996/work
+ninja==1.11.1
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1649806299270/work
+oauthlib @ file:///home/conda/feedstock_root/build_artifacts/oauthlib_1666056362788/work
+olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1602866521163/work
+omegaconf==2.2.3
+opencv-python==4.6.0.66
+packaging==23.0
+pathtools==0.1.2
+Pillow==9.3.0
+platformdirs==3.0.0
+promise==2.3
+protobuf==3.20.3
+psutil==5.9.4
+pyasn1==0.4.8
+pyasn1-modules==0.2.7
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pygame==2.1.3
+PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1683676063469/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1680037383858/work
+pyrsistent==0.19.3
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1648857264451/work
+pyu2f @ file:///home/conda/feedstock_root/build_artifacts/pyu2f_1604248910016/work
+PyVirtualDisplay==3.0
+PyYAML @ file:///home/conda/feedstock_root/build_artifacts/pyyaml_1648757092905/work
+ray==1.13.0
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1682535435083/work
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_1643557462909/work
+rl-games==1.6.0
+rsa @ file:///home/conda/feedstock_root/build_artifacts/rsa_1658328885051/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy_1637806658031/work
+sentry-sdk==1.19.1
+setproctitle==1.3.2
+shortuuid==1.0.11
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+smmap==5.0.0
+tensorboard @ file:///home/conda/feedstock_root/build_artifacts/tensorboard_1673674224265/work/tensorboard-2.11.2-py3-none-any.whl
+tensorboard-data-server @ file:///home/conda/feedstock_root/build_artifacts/tensorboard-data-server_1649932766502/work/tensorboard_data_server-0.6.0-py3-none-manylinux2010_x86_64.whl
+tensorboard-plugin-wit @ file:///home/conda/feedstock_root/build_artifacts/tensorboard-plugin-wit_1641458951060/work/tensorboard_plugin_wit-1.8.1-py3-none-any.whl
+tensorboardX==2.6
+termcolor==2.1.1
+torch==1.8.1
+torchvision==0.9.1
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1678559861143/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
+virtualenv==20.19.0
+wandb==0.12.21
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1676411946679/work
+yarl @ file:///home/conda/feedstock_root/build_artifacts/yarl_1648966511831/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1677313463193/work

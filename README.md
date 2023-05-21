@@ -20,6 +20,18 @@
 
 Please install [NVIDIA Isaac Gym Preview Release 4](https://developer.nvidia.com/isaac-gym) and [Isaac Gym Benchmark Environments](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs) by following their instructions.
 
+Tested in:
+
+```
+isaacgym                1.0rc4
+isaacgymenvs            1.3.4
+rl-games                1.6.0
+torch                   1.8.1
+hydra-core              1.3.2
+```
+
+
+
 
 
 ## Run Test
