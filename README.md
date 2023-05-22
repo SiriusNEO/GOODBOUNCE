@@ -1,6 +1,6 @@
 # GOODBOUNCE
 
-[Bouncing in Isaac Gym](big) | [PIG (PPO for Isaac Gym)](pig) | [Mini Paper](minipaper/minipaper.pdf) | Poster
+[Bouncing in Isaac Gym](big) | [PIG (PPO for Isaac Gym)](pig) | [Mini Paper](minipaper/minipaper.pdf) | [Poster](poster/poster.pptx)
 
 🏀 Balancing is Boring, Let’s Try Bouncing! CS3316 Reinforcement Learning Course Project.
 
